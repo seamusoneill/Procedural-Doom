@@ -1,0 +1,1166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Builder.exe">
+   <Modules>
+    <Module Name="builder.exe">
+     <Namespaces>
+      <Namespace Name="CodeImp.DoomBuilder">
+       <Types>
+        <Type Name="BinaryHeap`1" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="BinaryHeap.cs" Line="67">'BinaryHeap&lt;T&gt;' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="General" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CopyMemory(System.Void*,System.Void*,System.UInt32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.CopyMemory(void*, void*, uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateWindowEx(System.UInt32,System.String,System.String,System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr,System.Int32,System.IntPtr,System.String)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.CreateWindowEx(uint, string, string, uint, int, int, int, int, IntPtr, int, IntPtr, string)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="9" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'menu' of P/Invoke 'General.CreateWindowEx(uint, string, string, uint, int, int, int, int, IntPtr, int, IntPtr, string)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'classname' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="11" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'param' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'windowname' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DestroyWindow(System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.DestroyWindow(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FreeLibrary(System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.FreeLibrary(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetScrollInfo(System.IntPtr,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.GetScrollInfo(IntPtr, int, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetShortPathName(System.String,System.Text.StringBuilder,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.GetShortPathName(string, StringBuilder, uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'longpath' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'shortpath' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilInit()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.ilInit()' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadLibrary(System.String)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.LoadLibrary(string)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'filename' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LockWindowUpdate(System.IntPtr)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.LockWindowUpdate(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MessageBeep(CodeImp.DoomBuilder.Windows.MessageBeepType)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.MessageBeep(MessageBeepType)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenWebsite(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="1767">'General.OpenWebsite(string)' calls into 'Process.Start()' which has a LinkDemand. By making this call, 'Process.Start()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.OpenWebsite(string)'&#xD;&#xA;   -&gt;'General.OpenWebsite(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="1767">'General.OpenWebsite(string)' calls into 'Process.StartInfo.get()' which has a LinkDemand. By making this call, 'Process.StartInfo.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.OpenWebsite(string)'&#xD;&#xA;   -&gt;'General.OpenWebsite(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="1767">'General.OpenWebsite(string)' calls into 'ProcessStartInfo.Arguments.set(string)' which has a LinkDemand. By making this call, 'ProcessStartInfo.Arguments.set(string)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.OpenWebsite(string)'&#xD;&#xA;   -&gt;'General.OpenWebsite(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="1767">'General.OpenWebsite(string)' calls into 'ProcessStartInfo.FileName.set(string)' which has a LinkDemand. By making this call, 'ProcessStartInfo.FileName.set(string)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.OpenWebsite(string)'&#xD;&#xA;   -&gt;'General.OpenWebsite(string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SendMessage(System.IntPtr,System.UInt32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.SendMessage(IntPtr, uint, int, int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'wParam' of P/Invoke 'General.SendMessage(IntPtr, uint, int, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'lParam' of P/Invoke 'General.SendMessage(IntPtr, uint, int, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Return" Certainty="95" Level="Error">As it is declared in your code, the return type of P/Invoke 'General.SendMessage(IntPtr, uint, int, int)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'int'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetScrollInfo(System.IntPtr,System.Int32,System.IntPtr,System.Boolean)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.SetScrollInfo(IntPtr, int, IntPtr, bool)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetWindowPos(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.SetWindowPos(IntPtr, int, int, int, int, int, int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Terminate(System.Boolean)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="907">'General.Terminate(bool)' calls into 'Process.GetCurrentProcess()' which has a LinkDemand. By making this call, 'Process.GetCurrentProcess()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Exit(bool)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="907">'General.Terminate(bool)' calls into 'Process.GetCurrentProcess()' which has a LinkDemand. By making this call, 'Process.GetCurrentProcess()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Fail(string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="907">'General.Terminate(bool)' calls into 'Process.Kill()' which has a LinkDemand. By making this call, 'Process.Kill()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Exit(bool)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\General" File="General.cs" Line="907">'General.Terminate(bool)' calls into 'Process.Kill()' which has a LinkDemand. By making this call, 'Process.Kill()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Terminate(bool)'&#xD;&#xA;   -&gt;'General.Fail(string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ZeroMemory(System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'General.ZeroMemory(IntPtr, int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'MapManager' because it creates members of the following IDisposable types: 'Launcher', 'ScriptEditorForm'. If 'MapManager' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Actions">
+       <Types>
+        <Type Name="Action" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Actions" File="Action.cs" Line="125">'Action' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ActionManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadActions(System.Reflection.Assembly)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Actions" File="ActionManager.cs" Line="184">Object 'actionsdata' can be disposed more than once in method 'ActionManager.LoadActions(Assembly)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 184</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Compilers">
+       <Types>
+        <Type Name="Compiler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Compilers" File="Compiler.cs" Line="93">Modify 'Compiler.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Compilers" File="Compiler.cs" Line="93">Ensure that 'Compiler.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Controls">
+       <Types>
+        <Type Name="FieldsEditorControl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnFieldDeleted" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnFieldInserted" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnFieldNameChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.DualFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.DualFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnFieldTypeChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnFieldUndefined" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnFieldValueChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'FieldsEditorControl.SingleFieldNameEvent' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FieldsEditorRow" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.Windows.Forms.DataGridView,CodeImp.DoomBuilder.Config.UniversalFieldInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Controls" File="FieldsEditorRow.cs" Line="80">'FieldsEditorRow.FieldsEditorRow(DataGridView, UniversalFieldInfo)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;FieldsEditorRow..ctor(DataGridView, UniversalFieldInfo)&#xD;&#xA;DataGridViewBand.get_DefaultCellStyle():DataGridViewCellStyle</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.Windows.Forms.DataGridView,System.String,System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Controls" File="FieldsEditorRow.cs" Line="112">'FieldsEditorRow.FieldsEditorRow(DataGridView, string, int, object)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;FieldsEditorRow..ctor(DataGridView, String, Int32, Object)&#xD;&#xA;DataGridViewBand.get_DefaultCellStyle():DataGridViewCellStyle</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScintillaControl" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Perform(System.Int32,System.UInt32,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'ScintillaControl.Perform(int, uint, uint, uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScriptEditorControl" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SetupStyles(CodeImp.DoomBuilder.Config.ScriptConfiguration)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Controls" File="ScriptEditorControl.cs" Line="277">Object 'lexersdata' can be disposed more than once in method 'ScriptEditorControl.SetupStyles(ScriptConfiguration)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 277</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ThingBrowserControl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnTypeChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'ThingBrowserControl.TypeChangedDeletegate' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'ThingBrowserControl.TypeChangedDeletegate' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnTypeDoubleClicked" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'ThingBrowserControl.TypeDoubleClickDeletegate' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'ThingBrowserControl.TypeDoubleClickDeletegate' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TransparentPanel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateParams" Kind="Property" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_CreateParams()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+               <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Controls" File="TransparentPanel.cs" Line="52">'TransparentPanel.CreateParams.get()' calls into 'Panel.CreateParams.get()' which has a LinkDemand. By making this call, 'Panel.CreateParams.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'TransparentPanel.CreateParams.get()'&#xD;&#xA;   -&gt;'TransparentPanel.CreateParams.get()'</Issue>
+              </Message>
+              <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+               <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Controls" File="TransparentPanel.cs" Line="52">Add the following security attribute to 'TransparentPanel.CreateParams.get()' in order to match a LinkDemand on base method 'Panel.CreateParams.get()':  [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)].</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Data">
+       <Types>
+        <Type Name="DataReader" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(CodeImp.DoomBuilder.Data.DataLocation)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="DataReader.cs" Line="40">'DataReader.DataReader(DataLocation)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;DataReader..ctor(DataLocation)&#xD;&#xA;DataReader.GetTitle():String</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImageData" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'ImageData' because it creates members of the following IDisposable types: 'Bitmap'. If 'ImageData' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#LoadImage()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="ImageData.cs" Line="218">'ImageData.LoadImage()' calls into 'Marshal.StringToCoTaskMemAuto(string)' which has a LinkDemand. By making this call, 'Marshal.StringToCoTaskMemAuto(string)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'ImageData.LoadImage()'&#xD;&#xA;   -&gt;'ImageData.LoadImage()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LocalLoadImage()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="ImageData.cs" Line="229">'ImageData.LocalLoadImage()' calls into 'Bitmap.LockBits(Rectangle, ImageLockMode, PixelFormat)' which has a LinkDemand. By making this call, 'Bitmap.LockBits(Rectangle, ImageLockMode, PixelFormat)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'ImageData.LocalLoadImage()'&#xD;&#xA;   -&gt;'ImageData.LocalLoadImage()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="ImageData.cs" Line="229">'ImageData.LocalLoadImage()' calls into 'Bitmap.UnlockBits(BitmapData)' which has a LinkDemand. By making this call, 'Bitmap.UnlockBits(BitmapData)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'ImageData.LocalLoadImage()'&#xD;&#xA;   -&gt;'ImageData.LocalLoadImage()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateTexture()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="ImageData.cs" Line="373">'ImageData.UpdateTexture()' calls into 'Bitmap.LockBits(Rectangle, ImageLockMode, PixelFormat)' which has a LinkDemand. By making this call, 'Bitmap.LockBits(Rectangle, ImageLockMode, PixelFormat)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'ImageData.UpdateTexture()'&#xD;&#xA;   -&gt;'ImageData.UpdateTexture()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="ImageData.cs" Line="373">'ImageData.UpdateTexture()' calls into 'Bitmap.UnlockBits(BitmapData)' which has a LinkDemand. By making this call, 'Bitmap.UnlockBits(BitmapData)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'ImageData.UpdateTexture()'&#xD;&#xA;   -&gt;'ImageData.UpdateTexture()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PK3Reader" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(CodeImp.DoomBuilder.Data.DataLocation)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PK3Reader.cs" Line="71">Object 'zipstream' can be disposed more than once in method 'PK3Reader.PK3Reader(DataLocation)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 71</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadFile(System.String)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PK3Reader.cs" Line="353">Object 'zipstream' can be disposed more than once in method 'PK3Reader.LoadFile(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 353</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PreviewManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DrawPreview(System.Int32,System.Drawing.Graphics,System.Drawing.Point)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="208">'PreviewManager.DrawPreview(int, Graphics, Point)' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="211">'PreviewManager.DrawPreview(int, Graphics, Point)' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DumpAtlases()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="272">'PreviewManager.DumpAtlases()' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="276">'PreviewManager.DumpAtlases()' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetPreviewCopy(System.Int32)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="223">'PreviewManager.GetPreviewCopy(int)' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Data" File="PreviewManager.cs" Line="225">'PreviewManager.GetPreviewCopy(int)' locks on a reference of type 'Bitmap'. Replace this with a lock against an object with strong-identity.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Editing">
+       <Types>
+        <Type Name="UndoManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'UndoManager' because it creates members of the following IDisposable types: 'MemoryStream'. If 'UndoManager' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="UndoSnapshot" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'UndoSnapshot' because it creates members of the following IDisposable types: 'MemoryStream'. If 'UndoSnapshot' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Geometry">
+       <Types>
+        <Type Name="EarClipPolygon" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">Add [Serializable] to 'EarClipPolygon' as this type implements ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinedefSide" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Geometry" File="LinedefSide.cs" Line="90">'LinedefSide' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.IO">
+       <Types>
+        <Type Name="ClippedStream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Close()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\IO" File="ClippedStream.cs" Line="229">Object 'this' can be disposed more than once in method 'ClippedStream.Close()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 229</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DeserializerStream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'DeserializerStream' because it creates members of the following IDisposable types: 'BinaryReader'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FileImageReader" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ilBindImage(System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilBindImage(uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilConvertImage(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilConvertImage(uint, uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilCopyPixels(System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilCopyPixels(uint, uint, uint, uint, uint, uint, uint, uint, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilDeleteImages(System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilDeleteImages(int, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilGenImages(System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilGenImages(int, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilGetInteger(System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilGetInteger(uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ilLoadL(System.UInt32,System.IntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'FileImageReader.ilLoadL(uint, IntPtr, uint)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Lump" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'Lump' because it creates members of the following IDisposable types: 'ClippedStream'. If 'Lump' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SerializerStream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'SerializerStream' because it creates members of the following IDisposable types: 'BinaryWriter'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="UniversalStreamReader" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\IO" File="UniversalStreamReader.cs" Line="113">Object 'udmfcfg' can be disposed more than once in method 'UniversalStreamReader.UniversalStreamReader()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 113</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UniversalStreamWriter" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\IO" File="UniversalStreamWriter.cs" Line="97">Object 'udmfcfg' can be disposed more than once in method 'UniversalStreamWriter.UniversalStreamWriter()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 97</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WAD" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'WAD' because it creates members of the following IDisposable types: 'BinaryReader', 'BinaryWriter'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Map">
+       <Types>
+        <Type Name="BlockMap`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Drawing.RectangleF)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="BlockMap.cs" Line="74">'BlockMap&lt;BE&gt;.BlockMap(RectangleF)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;BlockMap&lt;BE&gt;..ctor(RectangleF)&#xD;&#xA;BlockMap&lt;BE&gt;.Initialize(RectangleF, Int32):Void&#xD;&#xA;BlockMap&lt;BE&gt;.Clear():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.Drawing.RectangleF,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="BlockMap.cs" Line="80">'BlockMap&lt;BE&gt;.BlockMap(RectangleF, int)' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;BlockMap&lt;BE&gt;..ctor(RectangleF, Int32)&#xD;&#xA;BlockMap&lt;BE&gt;.Initialize(RectangleF, Int32):Void&#xD;&#xA;BlockMap&lt;BE&gt;.Clear():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Linedef" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="Linedef.cs" Line="139">Ensure that 'Linedef.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapElement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="MapElement.cs" Line="76">Modify 'MapElement.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="MapElement.cs" Line="76">Ensure that 'MapElement.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapOptions" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="MapOptions.cs" Line="152">'MapOptions' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Sector" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="Sector.cs" Line="135">Ensure that 'Sector.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SelectableElement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="SelectableElement.cs" Line="64">Modify 'SelectableElement.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="SelectableElement.cs" Line="64">Ensure that 'SelectableElement.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Sidedef" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="Sidedef.cs" Line="124">Ensure that 'Sidedef.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Thing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="Thing.cs" Line="111">Ensure that 'Thing.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Vertex" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Map" File="Vertex.cs" Line="93">Ensure that 'Vertex.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Plugins">
+       <Types>
+        <Type Name="Plug" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'Plug' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Plugins" File="Plug.cs" Line="90">Modify 'Plug.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Plugins" File="Plug.cs" Line="90">Ensure that 'Plug.Dispose()' is declared as public and sealed.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Rendering">
+       <Types>
+        <Type Name="D3DDevice" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'D3DDevice' because it creates members of the following IDisposable types: 'Device', 'TextFont'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PixelColorBlock" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="PixelColorBlock.cs" Line="57">'PixelColorBlock.PixelColorBlock(int, int)' calls into 'GC.AddMemoryPressure(long)' which has a LinkDemand. By making this call, 'GC.AddMemoryPressure(long)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'PixelColorBlock.PixelColorBlock(int, int)'&#xD;&#xA;   -&gt;'PixelColorBlock.PixelColorBlock(int, int)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="PixelColorBlock.cs" Line="57">'PixelColorBlock.PixelColorBlock(int, int)' calls into 'Marshal.AllocCoTaskMem(int)' which has a LinkDemand. By making this call, 'Marshal.AllocCoTaskMem(int)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'PixelColorBlock.PixelColorBlock(int, int)'&#xD;&#xA;   -&gt;'PixelColorBlock.PixelColorBlock(int, int)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="PixelColorBlock.cs" Line="73">'PixelColorBlock.~PixelColorBlock()' calls into 'GC.RemoveMemoryPressure(long)' which has a LinkDemand. By making this call, 'GC.RemoveMemoryPressure(long)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'PixelColorBlock.~PixelColorBlock()'&#xD;&#xA;   -&gt;'PixelColorBlock.~PixelColorBlock()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="PixelColorBlock.cs" Line="73">'PixelColorBlock.~PixelColorBlock()' calls into 'Marshal.FreeCoTaskMem(IntPtr)' which has a LinkDemand. By making this call, 'Marshal.FreeCoTaskMem(IntPtr)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'PixelColorBlock.~PixelColorBlock()'&#xD;&#xA;   -&gt;'PixelColorBlock.~PixelColorBlock()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Renderer2D" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'Renderer2D' because it creates members of the following IDisposable types: 'Texture', 'Font', 'VertexBuffer'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Renderer3D" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'Renderer3D' because it creates members of the following IDisposable types: 'VertexBuffer'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SurfaceManager" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#EnsureFreeBufferSpace(CodeImp.DoomBuilder.Rendering.SurfaceBufferSet,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="SurfaceManager.cs" Line="376">Object '...[bufferindex].Tag' can be disposed more than once in method 'SurfaceManager.EnsureFreeBufferSpace(SurfaceBufferSet, int)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 376</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TextFont" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="TextFont.cs" Line="119">Object 'fontdata' can be disposed more than once in method 'TextFont.TextFont()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 119</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TextLabel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'TextLabel' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Rendering" File="TextLabel.cs" Line="130">Modify 'TextLabel.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.VisualModes">
+       <Types>
+        <Type Name="VisualCamera" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\VisualModes" File="VisualCamera.cs" Line="54">'VisualCamera.VisualCamera()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;VisualCamera..ctor()&#xD;&#xA;VisualCamera.PositionAtThing():Boolean</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="VisualSector" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'VisualSector' because it creates members of the following IDisposable types: 'VertexBuffer'. If 'VisualSector' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="VisualThing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'VisualThing' because it creates members of the following IDisposable types: 'VertexBuffer'. If 'VisualThing' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.Windows">
+       <Types>
+        <Type Name="DelayedForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ProcessCmdKey(System.Windows.Forms.Message&amp;,System.Windows.Forms.Keys)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="DelayedForm.cs" Line="76">Add the following security attribute to 'DelayedForm.ProcessCmdKey(ref Message, Keys)' in order to match a LinkDemand on base method 'Form.ProcessCmdKey(ref Message, Keys)':  [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)].</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MainForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="mouseinput" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.Designer.cs" Line="15">'MainForm' contains field 'MainForm.mouseinput' that is of IDisposable type: 'MouseInput'. Change the Dispose method on 'MainForm' to call Dispose or Close on this field.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ProcessDialogKey(System.Windows.Forms.Keys)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="1336">Add the following security attribute to 'MainForm.ProcessDialogKey(Keys)' in order to match a LinkDemand on base method 'Form.ProcessDialogKey(Keys)':  [UIPermission(SecurityAction.LinkDemand, Window = UIPermissionWindow.AllWindows)].</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ProcessKeyPreview(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="1335">Add the following security attribute to 'MainForm.ProcessKeyPreview(ref Message)' in order to match a LinkDemand on base method 'Form.ProcessKeyPreview(ref Message)':  [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)].</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WndProc(System.Windows.Forms.Message&amp;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">'MainForm.WndProc(ref Message)' calls into 'Form.WndProc(ref Message)' which has a LinkDemand. By making this call, 'Form.WndProc(ref Message)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">'MainForm.WndProc(ref Message)' calls into 'Marshal.FreeCoTaskMem(IntPtr)' which has a LinkDemand. By making this call, 'Marshal.FreeCoTaskMem(IntPtr)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">'MainForm.WndProc(ref Message)' calls into 'Marshal.PtrToStringAuto(IntPtr)' which has a LinkDemand. By making this call, 'Marshal.PtrToStringAuto(IntPtr)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">'MainForm.WndProc(ref Message)' calls into 'Message.Msg.get()' which has a LinkDemand. By making this call, 'Message.Msg.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">'MainForm.WndProc(ref Message)' calls into 'Message.WParam.get()' which has a LinkDemand. By making this call, 'Message.WParam.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'&#xD;&#xA;   -&gt;'MainForm.WndProc(ref Message)'</Issue>
+            </Message>
+            <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="BaseOnly" Certainty="33" Level="CriticalError" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="MainForm.cs" Line="2604">Add the following security attribute to 'MainForm.WndProc(ref Message)' in order to match a LinkDemand on base method 'Form.WndProc(ref Message)':  [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)].</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PreferencesController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Core\Windows" File="PreferencesController.cs" Line="77">'PreferencesController' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnAccept" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'PreferencesController.AcceptDelegate' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'PreferencesController.AcceptDelegate' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnCancel" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Declare the first parameter of 'PreferencesController.CancelDelegate' as an object named 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Declare the second parameter of 'PreferencesController.CancelDelegate' as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TanColorTable+DisplayInformation" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetCurrentThemeName(System.Text.StringBuilder,System.Int32,System.Text.StringBuilder,System.Int32,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'TanColorTable.DisplayInformation.GetCurrentThemeName(StringBuilder, int, StringBuilder, int, StringBuilder, int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'pszThemeFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'pszColorBuff' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="4" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'pszSizeBuff' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="CodeImp.DoomBuilder.ZDoom">
+       <Types>
+        <Type Name="ZDTextParser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2017-04-29 20:17:16Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'ZDTextParser' because it creates members of the following IDisposable types: 'BinaryReader'. If 'ZDTextParser' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>Declare event handlers correctly</Name>
+   <Description>By convention, .NET events have two parameters that specify the event sender and event data. Event handler signatures should follow this form: void MyEventHandler(object sender, EventArgs e). The 'sender' parameter is always of type System.Object, even if it is possible to employ a more specific type. The 'e' parameter is always of type System.EventArgs. Events that do not provide event data should use the System.EventHandler delegate type. Event handlers return void so that they can send each event to multiple target methods. Any value returned by a target would be lost after the first call.</Description>
+   <Resolution Name="First">Declare the first parameter of {0} as an object named 'sender'.</Resolution>
+   <Resolution Name="Second">Declare the second parameter of {0} as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213">
+   <Name>Disposable fields should be disposed</Name>
+   <Description>If a type that implements IDisposable owns fields that also implement IDisposable, the encapsulating type's Dispose() implementation should call Dispose() on each disposable field.</Description>
+   <Resolution Name="Default">{0} contains field {1} that is of IDisposable type: {2}. Change the Dispose method on {0} to call Dispose or Close on this field.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182328.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 277</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>Do not indirectly expose methods with link demands</Name>
+   <Description>Do not wrap a method protected by a LinkDemand with a method that does not perform a security check. A LinkDemand checks the permissions of the immediate caller rather than checking the permissions of all callers in the call stack. In this case, the permissions of the wrapper method will be checked. If the wrapper method does not, itself, check the permissions of callers higher in the call stack, malicious code might be able to execute the wrapped function even though it lacks permission to do so.</Description>
+   <Resolution Name="Default">{0} calls into {1} which has a LinkDemand. By making this call, {1} is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: {2}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182303.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002">
+   <Name>Do not lock on objects with weak identity</Name>
+   <Description>Don't take locks on objects that may bleed across AppDomains or that don't have a strong identity.</Description>
+   <Resolution Name="Default">{0} locks on a reference of type {1}. Replace this with a lock against an object with strong-identity.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182290.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="reliabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>Implement IDisposable correctly</Name>
+   <Description>All IDisposable types should implement the Dispose pattern correctly.</Description>
+   <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+   <Resolution Name="DisposeSignature">Ensure that {0} is declared as public and sealed.</Resolution>
+   <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>Mark ISerializable types with SerializableAttribute</Name>
+   <Description>The System.Runtime.Serialization.ISerializable interface allows the type to customize its serialization, while the Serializable attribute enables the runtime to recognize the type as being serializable.</Description>
+   <Resolution Name="Default">Add [Serializable] to {0} as this type implements ISerializable.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Move P/Invokes to NativeMethods class</Name>
+   <Description>This type contains members with the DllImport attribute. Members with the DllImport attribute should be contained in classes named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123">
+   <Name>Override link demands should be identical to base</Name>
+   <Description>If a virtual method has a LinkDemand, in many cases, so should any override of it, and if an override has a LinkDemand, so should the overridden virtual method. Because it is possible to call any of the overrides of a virtual method explicitly, they should all have the same LinkDemand status or, if not, should be reviewed. This also applies to LinkDemand security checks for methods that part of an interface implementation, because the caller might use an interface-typed reference to access the method.</Description>
+   <Resolution Name="BaseOnly">Add the following security attribute to {0} in order to match a LinkDemand on base method {1}:  {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182305(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke declarations should be portable</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">As it is declared in your code, parameter {0} of P/Invoke {1} will be {2} bytes wide on {3} platforms. This is not correct, as the actual native declaration of this API indicates it should be {4} bytes wide on {3} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {5}.</Resolution>
+   <Resolution Name="Return">As it is declared in your code, the return type of P/Invoke {0} will be {1} bytes wide on {2} platforms. This is not correct, as the actual native declaration of this API indicates it should be {3} bytes wide on {2} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821">
+   <Name>Remove empty finalizers</Name>
+   <Description>Finalizers should be avoided where possible, to avoid the additional performance overhead involved in tracking object lifetime.</Description>
+   <Resolution Name="Default">{0} implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264476.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Specify marshaling for P/Invoke string arguments</Name>
+   <Description>When marshaling strings as ANSI (or as Auto on Win9x), some characters may be changed. If best-fit mapping is on, strings that appear different in Unicode will be marshaled to identical ANSI strings, which may lead to incorrect security decisions. Turning best-fit mapping off reduces this risk, as all characters without equivalents are mapped to '?'. Also, note that CharSet.Ansi is the default setting for all string marshaling; Unicode marshaling must be specified explicitly, either as a CharSet setting of DllImport or StructLayout, or as a MarshalAs attribute with a Unicode (or system-dependent) UnmanagedType.</Description>
+   <Resolution Name="Parameter">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   <Resolution Name="ParameterImplicitAnsi">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="DependsOnFix">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}. If {0} has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Resolution>
+   <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

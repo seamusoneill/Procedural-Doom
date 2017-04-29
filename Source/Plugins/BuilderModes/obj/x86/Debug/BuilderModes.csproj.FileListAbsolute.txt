@@ -1,0 +1,77 @@
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\BuilderModes.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\BuilderModes.pdb
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csprojResolveAssemblyReference.cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.CurveLinedefsForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.MenusForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.ErrorCheckForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.FindReplaceForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Interface.MakeDoorForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Properties.Resources.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.PreferencesForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.EditSelectionPanel.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.UndoRedoPanel.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csproj.GenerateResource.Cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.pdb
+G:\2017\doom\doombuilder\Build\Plugins\BuilderModes.dll
+G:\2017\doom\doombuilder\Build\Plugins\BuilderModes.pdb
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csprojResolveAssemblyReference.cache
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.CurveLinedefsForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.MenusForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.ErrorCheckForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.FindReplaceForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Interface.MakeDoorForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Properties.Resources.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.PreferencesForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.EditSelectionPanel.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.UndoRedoPanel.resources
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csproj.GenerateResource.Cache
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.dll
+G:\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\BuilderModes.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\BuilderModes.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csprojResolveAssemblyReference.cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.CurveLinedefsForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.MenusForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.ErrorCheckForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.FindReplaceForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Interface.MakeDoorForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Properties.Resources.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.PreferencesForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.EditSelectionPanel.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.UndoRedoPanel.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csproj.GenerateResource.Cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\BuilderModes.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\BuilderModes.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.CurveLinedefsForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.MenusForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.ErrorCheckForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.FindReplaceForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Interface.MakeDoorForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Properties.Resources.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.PreferencesForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.EditSelectionPanel.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.UndoRedoPanel.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csproj.GenerateResource.Cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\BuilderModes.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\BuilderModes.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.CurveLinedefsForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.MenusForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.ErrorCheckForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.FindReplaceForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Interface.MakeDoorForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.Properties.Resources.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.PreferencesForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.EditSelectionPanel.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\CodeImp.DoomBuilder.BuilderModes.UndoRedoPanel.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.csproj.GenerateResource.Cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\BuilderModes\obj\x86\Debug\BuilderModes.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\BuilderModes.dll.CodeAnalysisLog.xml
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\BuilderModes.dll.lastcodeanalysissucceeded

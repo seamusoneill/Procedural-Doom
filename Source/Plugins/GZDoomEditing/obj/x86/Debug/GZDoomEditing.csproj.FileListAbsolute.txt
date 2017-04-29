@@ -1,0 +1,42 @@
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\GZDoomEditing.txt
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\GZDoomEditing.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\GZDoomEditing.pdb
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csprojResolveAssemblyReference.cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\GZDoomEditing\obj\x86\Debug\CodeImp.DoomBuilder.GZDoomEditing.Properties.Resources.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csproj.GenerateResource.Cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.pdb
+G:\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.txt
+G:\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.dll
+G:\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.pdb
+G:\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csprojResolveAssemblyReference.cache
+G:\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\CodeImp.DoomBuilder.GZDoomEditing.Properties.Resources.resources
+G:\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csproj.GenerateResource.Cache
+G:\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.dll
+G:\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.txt
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\GZDoomEditing.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csprojResolveAssemblyReference.cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\CodeImp.DoomBuilder.GZDoomEditing.Properties.Resources.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csproj.GenerateResource.Cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\GZDoomEditing.txt
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\GZDoomEditing.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\GZDoomEditing.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\CodeImp.DoomBuilder.GZDoomEditing.Properties.Resources.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csproj.GenerateResource.Cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\GZDoomEditing.txt
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\GZDoomEditing.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\GZDoomEditing.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\CodeImp.DoomBuilder.GZDoomEditing.Properties.Resources.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.csproj.GenerateResource.Cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\GZDoomEditing\obj\x86\Debug\GZDoomEditing.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\GZDoomEditing.dll.CodeAnalysisLog.xml
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\GZDoomEditing.dll.lastcodeanalysissucceeded

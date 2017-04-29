@@ -1,0 +1,42 @@
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\CommentsPanel.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\CommentsPanel.pdb
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csprojResolveAssemblyReference.cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.CommentsDocker.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.Properties.Resources.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csproj.GenerateResource.Cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.pdb
+G:\2017\doom\doombuilder\Build\Plugins\CommentsPanel.dll
+G:\2017\doom\doombuilder\Build\Plugins\CommentsPanel.pdb
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csprojResolveAssemblyReference.cache
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.CommentsDocker.resources
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.Properties.Resources.resources
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csproj.GenerateResource.Cache
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.dll
+G:\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\CommentsPanel.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\CommentsPanel.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csprojResolveAssemblyReference.cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.CommentsDocker.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.Properties.Resources.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csproj.GenerateResource.Cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\CommentsPanel.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\CommentsPanel.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.CommentsDocker.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.Properties.Resources.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csproj.GenerateResource.Cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\CommentsPanel.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\CommentsPanel.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.CommentsDocker.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CodeImp.DoomBuilder.CommentsPanel.Properties.Resources.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.csproj.GenerateResource.Cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\CommentsPanel\obj\x86\Debug\CommentsPanel.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\CommentsPanel.dll.CodeAnalysisLog.xml
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\CommentsPanel.dll.lastcodeanalysissucceeded

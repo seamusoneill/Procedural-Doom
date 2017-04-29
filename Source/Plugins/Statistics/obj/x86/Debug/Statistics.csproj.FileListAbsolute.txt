@@ -1,0 +1,37 @@
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\Statistics.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Build\Plugins\Statistics.pdb
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csprojResolveAssemblyReference.cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\Statistics\obj\x86\Debug\CodeImp.DoomBuilder.Statistics.StatisticsForm.resources
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csproj.GenerateResource.Cache
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\Statistics\obj\x86\Debug\Statistics.dll
+G:\2016\projets\doom\doombuilder-code-2646-trunk\doombuilder-code-2646-trunk\Source\Plugins\Statistics\obj\x86\Debug\Statistics.pdb
+G:\2017\doom\doombuilder\Build\Plugins\Statistics.dll
+G:\2017\doom\doombuilder\Build\Plugins\Statistics.pdb
+G:\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csprojResolveAssemblyReference.cache
+G:\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\CodeImp.DoomBuilder.Statistics.StatisticsForm.resources
+G:\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csproj.GenerateResource.Cache
+G:\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.dll
+G:\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\Statistics.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Build\Plugins\Statistics.pdb
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csprojResolveAssemblyReference.cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\CodeImp.DoomBuilder.Statistics.StatisticsForm.resources
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csproj.GenerateResource.Cache
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.dll
+C:\Users\guillaume\Documents\2017\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\Statistics.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Build\Plugins\Statistics.pdb
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\CodeImp.DoomBuilder.Statistics.StatisticsForm.resources
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csproj.GenerateResource.Cache
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.dll
+C:\Users\Seamus\Downloads\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\Statistics.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\Statistics.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csprojResolveAssemblyReference.cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\CodeImp.DoomBuilder.Statistics.StatisticsForm.resources
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.csproj.GenerateResource.Cache
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.dll
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Source\Plugins\Statistics\obj\x86\Debug\Statistics.pdb
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\Statistics.dll.CodeAnalysisLog.xml
+C:\Users\Seamus\Documents\CGD\College work\Enjmin\doom\doombuilder\Build\Plugins\Statistics.dll.lastcodeanalysissucceeded
